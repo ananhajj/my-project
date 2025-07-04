@@ -1,0 +1,24 @@
+
+يجب إضافة المسارات التالية في App.tsx:
+
+import Profile from './pages/Profile';
+import ContentManagement from './pages/ContentManagement';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import Help from './pages/Help';
+
+// داخل عنصر Routes
+<Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+<Route path="/content-management" element={<ProtectedRoute><ContentManagement /></ProtectedRoute>} />
+<Route path="/privacy-policy" element={<PrivacyPolicy />} />
+<Route path="/terms-of-service" element={<TermsOfService />} />
+<Route path="/help" element={<Help />} />
+
+هذه المسارات تشمل:
+- /profile - صفحة الملف الشخصي للمستخدم
+- /content-management - صفحة إدارة المحتوى (للمدير فقط)
+- /privacy-policy - صفحة سياسة الخصوصية (عامة)
+- /terms-of-service - صفحة شروط الاستخدام (عامة)
+- /help - صفحة المساعدة (عامة)
+
+ملاحظة: صفحة إدارة المحتوى محمية بـ ProtectedRoute، بينما الصفحات الأخرى عامة ويمكن الوصول إليها بدون تسجيل دخول.
