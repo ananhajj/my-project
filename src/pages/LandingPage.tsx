@@ -7,7 +7,7 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-slate-100 to-blue-50 p-6">
       {/* الشعار */}
-      <img src="/public/lovable-uploads/ceeee985-6f40-459e-8179-d315fbab21ab.png" alt="شعار حاضرون" className="w-24 h-24 mb-4" />
+      <img src="/lovable-uploads/ceeee985-6f40-459e-8179-d315fbab21ab.png" alt="شعار حاضرون" className="w-24 h-24 mb-4" />
 
       {/* العنوان */}
       <h1 className="text-4xl font-extrabold text-blue-900 text-center">
