@@ -178,7 +178,9 @@ const LateAttendance = () => {
             onSectionChange={setSelectedSection}
             onPeriodChange={setSelectedPeriod}
             onSaveAttendance={saveAttendance}
-            getStageDisplayName={getStageDisplayName}
+            getStageDisplayName={(stage) =>
+              typeof stage === 'string' ? stage : (stage.name_ar || stage.name || stage.id)
+            }
           />
 
           {/* Late Attendance Statistics */}
